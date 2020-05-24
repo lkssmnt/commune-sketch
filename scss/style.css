@@ -36,6 +36,8 @@ body {
   position: fixed;
   font-family: Menlo, monospace;
   width: 70vw;
+  max-width: 900px;
+  height: 80vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -46,16 +48,16 @@ body {
   font-weight: 100;
 }
 .content h1 {
-  font-size: 3vw;
+  font-size: 3vmax;
   margin-bottom: 3.5vw;
 }
 .content h2 {
-  font-size: 2vw;
+  font-size: 2vmax;
   line-height: 1.4;
   margin-bottom: 3.5vw;
 }
 .content p {
-  margin-top: 1.8vw;
+  margin-top: 1.8vmax;
   font-size: 1.5vw;
   line-height: 1.5;
 }

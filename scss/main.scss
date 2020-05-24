@@ -36,6 +36,8 @@ body {
     position: fixed;
     font-family: Menlo, monospace;
     width: 70vw;
+    max-width: 900px;
+    height: 80vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -47,18 +49,18 @@ body {
     }
 
     h1 {
-        font-size: 3.0vw;
+        font-size: 3.0vmax;
         margin-bottom: 3.5vw;
     }
 
     h2 {
-        font-size: 2.0vw;
+        font-size: 2.0vmax;
         line-height: 1.4;
         margin-bottom: 3.5vw;
     }
 
     p {
-        margin-top: 1.8vw;
+        margin-top: 1.8vmax;
         font-size: 1.5vw;
         line-height: 1.5;
     }
