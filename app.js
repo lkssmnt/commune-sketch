@@ -7,13 +7,13 @@
 // console.log(angleRadians);
 // console.log(angleDegrees);
 
-gsap.set(".circle-1", {x: "-1500", y: "-1000", ease: "slow"});
-gsap.set(".circle-2", {x: "-2000", y: "1000", ease: "slow"});
-gsap.set(".circle-3", {x: "3000", y: "2000", ease: "slow"});
+gsap.set(".circle-1", {x: "-1500", y: "-1000"});
+gsap.set(".circle-2", {x: "-2000", y: "1000"});
+gsap.set(".circle-3", {x: "3000", y: "2000"});
 
-gsap.to(".circle-1", {duration: 2, x: "5vw", y: "-30vh", ease: "slow"});
-gsap.to(".circle-2", {duration: 2, x: "-40vw", y: "20vh", ease: "slow"});
-gsap.to(".circle-3", {duration: 2, x: "50vw", y: "50vh", ease: "slow"});
+gsap.to(".circle-1", {duration: 2, x: "5vw", y: "-30vh"});
+gsap.to(".circle-2", {duration: 2, x: "-40vw", y: "20vh"});
+gsap.to(".circle-3", {duration: 2, x: "50vw", y: "50vh"});
 
 const min = 0;
 const max = 255;
@@ -101,9 +101,9 @@ window.addEventListener('wheel', e => {
     
 
     if(delta === 1) {
-        scaleCounter = scaleCounter*1.1 + 1;
+        scaleCounter = scaleCounter*1.05 + 1;
     } else {
-        scaleCounter = scaleCounter*0.9 - 1;
+        scaleCounter = scaleCounter*0.95 - 1;
     }
 
     if(scaleCounter < -8){
