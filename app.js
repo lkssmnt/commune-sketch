@@ -52,24 +52,30 @@ document.addEventListener('click', (event) => {
         let r1 = Math.floor(Math.random() * (max - min)) + min;
         let g1 = Math.floor(Math.random() * (max - min)) + min;
         let b1 = Math.floor(Math.random() * (max - min)) + min;
-        gsap.to(circle1, {duration: 1, x: event.clientX - width / 2, y: event.clientY - width / 2});
+        circle1.style.filter = 'none';
+        gsap.to(circle1, {duration: 1, x: event.clientX - width / 2, y: event.clientY - width / 2, onComplete:reBlur, onCompleteParams:[circle1]});
         circle1.style.backgroundColor = `rgb(${r1}, ${b1}, ${g1})`;
+
     }
 
     if(i === 1 ) {
         let r1 = Math.floor(Math.random() * (max - min)) + min;
         let g1 = Math.floor(Math.random() * (max - min)) + min;
         let b1 = Math.floor(Math.random() * (max - min)) + min;
-        gsap.to(circle2, {duration: 1, x: event.clientX - width / 2, y: event.clientY - width / 2});
+        circle2.style.filter = 'none';
+        gsap.to(circle2, {duration: 1, x: event.clientX - width / 2, y: event.clientY - width / 2, onComplete:reBlur, onCompleteParams:[circle2]});
         circle2.style.backgroundColor = `rgb(${r1}, ${b1}, ${g1})`;
+
     }
 
     if(i === 2 ) {
         let r1 = Math.floor(Math.random() * (max - min)) + min;
         let g1 = Math.floor(Math.random() * (max - min)) + min;
         let b1 = Math.floor(Math.random() * (max - min)) + min;
-        gsap.to(circle3, {duration: 1, x: event.clientX - width / 2, y: event.clientY - width / 2});
+        circle3.style.filter = 'none';
+        gsap.to(circle3, {duration: 1, x: event.clientX - width / 2, y: event.clientY - width / 2, onComplete:reBlur, onCompleteParams:[circle3]});
         circle3.style.backgroundColor = `rgb(${r1}, ${b1}, ${g1})`;
+
     }
 
     i++;
@@ -79,6 +85,11 @@ document.addEventListener('click', (event) => {
     }
 
 });
+
+function reBlur(circle){
+    console.log(circle);
+    circle.style.filter = 'blur(50px)';
+}
 
 const cursor = document.querySelector('.cursor');
 

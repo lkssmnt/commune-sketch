@@ -71,6 +71,9 @@ body {
   margin: 0;
   top: 0;
   left: 0;
+  transition: filter 0.5s;
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
 }
 
 .circle-1 {
