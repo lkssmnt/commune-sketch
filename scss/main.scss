@@ -16,17 +16,17 @@ body {
 
 @font-face {
     font-family: "TimesDot";
-    src: url("/fonts/Times-Roman.woff2") format("woff2")
+    src: url("../fonts/Times-Roman.woff2") format("woff2")
   }
 
 @font-face {
     font-family: "TimesDotItalic";
-    src: url("/fonts/Times-Italic.woff2") format("woff2")
+    src: url("../fonts/Times-Italic.woff2") format("woff2")
 }
 
 @font-face {
     font-family: "TimesNowLight";
-    src: url("/fonts/TimesNow-Light.woff2") format("woff2")
+    src: url("../fonts/TimesNow-Light.woff2") format("woff2")
 }
 
 .cursor {
