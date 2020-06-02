@@ -13,7 +13,7 @@ gsap.set(".circle-1", {x: "-1500", y: "-1000"});
 gsap.set(".circle-2", {x: "-2000", y: "1000"});
 gsap.set(".circle-3", {x: "3000", y: "2000"});
 
-gsap.to(".circle-1", {duration: 2, x: "5vw", y: "-30vh"});
+gsap.to(".circle-1", {duration: 2, x: "-5vw", y: "-30vh"});
 gsap.to(".circle-2", {duration: 2, x: "-40vw", y: "20vh"});
 gsap.to(".circle-3", {duration: 2, x: "50vw", y: "50vh"});
 
