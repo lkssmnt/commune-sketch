@@ -53,7 +53,7 @@ document.addEventListener('click', (event) => {
         let g1 = Math.floor(Math.random() * (max - min)) + min;
         let b1 = Math.floor(Math.random() * (max - min)) + min;
         // circle1.style.filter = 'none';
-        circle1.classList.remove('blurred');
+        // circle1.classList.remove('blurred');
         gsap.to(circle1, {duration: 1, x: event.clientX - width / 2, y: event.clientY - width / 2, onComplete:reBlur, onCompleteParams:[circle1]});
         circle1.style.backgroundColor = `rgb(${r1}, ${b1}, ${g1})`;
 
@@ -63,7 +63,7 @@ document.addEventListener('click', (event) => {
         let r1 = Math.floor(Math.random() * (max - min)) + min;
         let g1 = Math.floor(Math.random() * (max - min)) + min;
         let b1 = Math.floor(Math.random() * (max - min)) + min;
-        circle2.classList.remove('blurred');
+        // circle2.classList.remove('blurred');
         // circle2.style.filter = 'none';
         gsap.to(circle2, {duration: 1, x: event.clientX - width / 2, y: event.clientY - width / 2, onComplete:reBlur, onCompleteParams:[circle2]});
         circle2.style.backgroundColor = `rgb(${r1}, ${b1}, ${g1})`;
@@ -74,7 +74,7 @@ document.addEventListener('click', (event) => {
         let r1 = Math.floor(Math.random() * (max - min)) + min;
         let g1 = Math.floor(Math.random() * (max - min)) + min;
         let b1 = Math.floor(Math.random() * (max - min)) + min;
-        circle3.classList.remove('blurred');
+        // circle3.classList.remove('blurred');
         // circle3.style.filter = 'none';
         gsap.to(circle3, {duration: 1, x: event.clientX - width / 2, y: event.clientY - width / 2, onComplete:reBlur, onCompleteParams:[circle3]});
         circle3.style.backgroundColor = `rgb(${r1}, ${b1}, ${g1})`;
@@ -91,7 +91,7 @@ document.addEventListener('click', (event) => {
 
 function reBlur(circle){
     console.log(circle);
-    circle.classList.add('blurred');
+    // circle.classList.add('blurred');
 }
 
 const cursor = document.querySelector('.cursor');
