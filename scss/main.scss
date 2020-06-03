@@ -142,8 +142,21 @@ img {
     will-change: filter;
     transition: filter 0.5s;
     transition: background-color 0.5s;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+}
+
+.blurred {
+    will-change: filter;
+    transition: filter 0.5s;
     filter: blur(50px);
     -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -o-filter: blur(50px);
+    -ms-filter: blur(50px);
 }
 
 .circle-1 {
