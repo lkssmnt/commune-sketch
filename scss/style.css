@@ -117,7 +117,10 @@ img {
   margin: 0;
   top: 0;
   left: 0;
+  will-change: transform;
+  will-change: filter;
   transition: filter 0.5s;
+  transition: background-color 0.5s;
   filter: blur(50px);
   -webkit-filter: blur(50px);
 }
@@ -132,6 +135,33 @@ img {
 
 .circle-3 {
   background-color: #643d96;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    overflow: scroll;
+    font-size: 1.8vw;
+  }
+
+  .content {
+    font-size: 3em;
+  }
+
+  .left-col {
+    position: relative;
+    width: 100%;
+  }
+
+  .right-col {
+    position: relative;
+    width: 100%;
+  }
+
+  .about-block {
+    position: relative;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
